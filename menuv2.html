@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>Navigation Beispiel</title>
+    <title>menü</title>
+    <script>
+        // JavaScript, um das Menü aus menu.html zu laden
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-container').innerHTML = data;
+            });
+    </script>
 
     <nav>
         <img src="AESLogo.png" alt="Logo">
@@ -37,7 +45,7 @@
             padding: 0;
             height: 100%; /* Ensure the body takes up the full height of the viewport */
             overflow-x: hidden; /* Prevent horizontal scrolling */
-            overflow-y: auto; /* Ensure vertical scrolling works when needed */
+            overflow-y: hidden; /* Ensure vertical scrolling works when needed */
         }
 
         /* Background Image Container */
@@ -47,6 +55,8 @@
 
             background-image: url('Hintergrundbild1.png'); /* Replace with your background image */
             background-size: cover;
+            background-repeat: no-repeat;
+            background-color: white;
             background-position: center;
             display: flex;
             justify-content: center; /* Center content horizontally */
@@ -130,5 +140,13 @@
             background-color: #0056b3;
         }
     </style>
+<footer>
+    <ul>
+        <li><a href="impressum.html">Impressum</a></li>
+    </ul>
+</footer>
+</head>
+
+
 </body>
 </html>

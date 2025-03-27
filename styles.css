@@ -48,3 +48,59 @@ nav ul li a:hover {
 .content{
             padding-top : 20px;
         }
+
+        footer
+        {
+            position :fixed;
+            bottom : 0;
+            left : 0;
+            width : 100%;
+            z-index : 1000;
+            background-color: #333;
+            justify-content: space-between;
+            display: flex;
+            justify-content: right;
+            align-items: right;
+        }
+
+footer img
+            {
+                height: 40px;
+                margin-right: auto;
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding : 0;
+                overflow: hidden;
+            }
+    
+footer ul  
+            {
+            list-style-type: none;
+            margin: 0;
+            padding : 0;
+            overflow: hidden;
+            }
+
+footer ul li
+            {
+                float: left;
+            }
+
+footer ul li a
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+        
+footer ul li a:hover
+            {
+                background-color: #111;
+            }
